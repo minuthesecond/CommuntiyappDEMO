@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+.container{
+    width:75%;
+    margin:1rem auto;
+}
+.container-fluid{
+    width:100%;
+}
+h1,h2,h3{
+    text-align: center;
+    margin:1rem auto;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    gap: 2rem;
+    margin:2rem auto;
+}
+.col{
+    flex:1 1 auto;
+}
+#main-header{
+    margin:0;
+}
+#main-header h1{
+    margin:2rem auto;
+}
+#main-header nav{
+    background-color: bisque;
+    padding:2rem;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: center;
+    margin:0;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+img{
+    max-width: 100%;
+    height:auto;
+}
+.wireframe{
+    border: solid 1px black;
+    padding:1rem;
+    border-radius: 10px;
+}
+section#app{
+    text-align: center;
+}
+section .col{
+    width:100%;
+    margin:1rem auto;
+    border:solid 1px aliceblue;
+    padding:2rem;
+    border-radius: 10px;
+}
+
+#purpose .col{
+     background-color: bisque;
+}
+#purpose .col:hover{
+    background:radial-gradient(white,bisque);
+}
+footer #references{
+    margin:2rem auto;
+    background-color: antiquewhite;
+    padding:1rem;
+}
+footer #references ol li{
+    margin:2rem auto;
+}
+footer{
+    margin-bottom:2rem;
+}
+@media(min-width:768px){
+    .row,nav ul{
+        flex-direction: row;
+    }
+    section .col{
+        width: 50%;
+    }
+}
